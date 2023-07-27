@@ -10,6 +10,9 @@
   </head>
   <body>
 
+
+    <!-- **************************Header************************ -->
+
     <div id="header">
       <nav>
         <img src="communique icon.png" class="logo" />
@@ -28,33 +31,32 @@
 
 
 
-    <!-- <div class="Home"> -->
       <div class="img-col">
         <img src="gmun_logo_iitkgp.png" alt="" />
       </div>
-    <!-- </div> -->
 
       <!-- *****************************About************************************** -->
     <div class="about" id="about">
-    <!-- <div class="about-text"> -->
       <h1 class="about-heading">About GMUN</h1>
       <p class="about-content"> 
-        Global Model United Nations
-        At a MUN conference, students work as the representative of a country, organization, or person, and must solve a problem with other delegates from around the world. MUN teaches participants skills like research, public speaking, debating, and writing, in addition to critical thinking, teamwork, and leadership.
-        Preparing and participating in a MUN helps students develop leadership skills, research, writing, public speaking, and problem-solving skills.
+        <span>The Global Model United Nations is a three-day event which took place at IIT Kharagpur. 
+        </span>
+        <span>At a MUN conference, students work as the representative of a country, organization, or person, and must solve a problem with other delegates from around the world. MUN teaches participants skills like research, public speaking, debating, and writing, in addition to critical thinking, teamwork, and leadership.
+        </span>
+         It stimulates the UN and provides an opportunity to learn about diplomacy, global issues, and the UN through the committees like: UNHRC, DISEC, SOCHUM and ECOSOC.
+         Preparing and participating in a MUN helps students develop leadership skills, research, writing, public speaking, and problem-solving skills and gain a better understanding of the world. 
       </p>
     </div>
-  <!-- </div> -->
 
     <!-- *************************************Cards*************************************** -->
 
-
+<div class="card-bg">
 <div class = "card-container" id="committee">
   <div class = "card">    
-      <img href = "#" src="sochum.png">
+      <img href = "#" src="disec (1).jpg">
     <div class = content>
-      <h3>SOCHUM</h3>
-      <p>The Third Committee of the United Nations General Assembly, or the Social, Humanitarian, and Cultural Committee (SOCHUM), focuses on issues dealing with fundamental human rights in the international community. SOCHUM was founded in 1945 in reaction to the establishment of the Universal Declaration on Human Rights.</p>
+      <h3>DISEC</h3>
+      <p>It is the first of the Main Committees in the General Assembly when the charter of the United Nations was signed in 1945. The purpose of the committee in the General Assembly is to establish general principles of cooperation in the maintenance of international peace and security, including the principles governing disarmament and the regulation of armaments, and also to give “recommendations with regard to such principles to the Members or to the Security Council.”</p>
     </div>
   </div>    
 
@@ -68,6 +70,18 @@
 </div>
 
 <div class = card-container>
+
+
+  <div class = card>
+    <img href = "#" src="sochum.png">
+  <div class = content>
+    <h3>SOCHUM</h3>
+    <p>
+      The Third Committee of the United Nations General Assembly, or the Social, Humanitarian, and Cultural Committee (SOCHUM), focuses on issues dealing with fundamental human rights in the international community. SOCHUM was founded in 1945 in reaction to the establishment of the Universal Declaration on Human Rights.
+    </p>
+  </div>
+</div>    
+
   <div class = card>    
       <img href = "#" src="ecosoc4.jpg">
     <div class = content>
@@ -76,20 +90,15 @@
     </div>
   </div>    
 
-  <div class = card>
-      <img href = "#" src="disec (1).jpg">
-    <div class = content>
-      <h3>DISEC</h3>
-      <p>It is the first of the Main Committees in the General Assembly when the charter of the United Nations was signed in 1945. The purpose of the committee in the General Assembly is to establish general principles of cooperation in the maintenance of international peace and security, including the principles governing disarmament and the regulation of armaments, and also to give “recommendations with regard to such principles to the Members or to the Security Council.”</p>
-    </div>
-  </div>    
+ 
+</div>
 </div>
 
 
 
 <!-- *****************************Contact************************************** -->
 
-    
+<div class="contact-bg">  
 <div id="contact">
     <div class="container-contact">
             <div class="contact-left">
@@ -101,15 +110,17 @@
             </div>
             <div class="contact-right">
                 <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your e-mail address" required>
-                    <textarea name="Message" rows="5" placeholder="Your text here"></textarea>
-                    <button type="submit" class="btn btn2">submit</button>
+                    <input type="text" name="Name" placeholder="Your Name" id="name" required>
+                    <input type="email" id="email" name="email" placeholder="Your e-mail address" required>
+                    <textarea name="Message" id="text" rows="5" placeholder="Your text here"></textarea>
+                    <button type="submit" id="btn" class="btn btn2">Submit</button>
                 </form>
             </div>
     </div>
 </div>
+</div>
 
+<!-- *************************Footer************************ -->
 
 <footer>
   <div class="flex-container">
@@ -132,5 +143,7 @@
   </div>
 </div>
 </footer>
+
+<script src="script.js"></script>
   </body>
 </html>
